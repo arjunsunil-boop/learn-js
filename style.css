@@ -1,0 +1,21 @@
+#counter{
+    text-align: center;
+    font: 1.5em sans-serif;
+}
+
+#btnContainer{
+    text-align: center;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: aqua;
+    background-color: black;
+    cursor:grabbing;
+
+}
+
+.btn:hover{
+    background-color: antiquewhite;
+}
