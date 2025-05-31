@@ -10,16 +10,21 @@
 
 <body>
 
-    <h1>Number Guessing Game</h1>
+    
 
-    <input type="number" id="num">
-    <label for="">Type the number between 1 and 3</label>
-
-    <br><br>
-    <button id="submit">Check </button>
-    <br><br>
-    <p id="para1"></p>
-
+    <form action="" id="form1">
+        <h1 id="h1">Temperature Converter</h1>
+        <input type="number" id="temp" value="0">
+        <br><br>
+        <input type="radio" id="cTof" name="2" class="radioBtn">
+        <label for="cTof">Celsius to Farenheit</label><br>
+        <input type="radio" id="fToc" name="2" class="radioBtn">
+        <label for="fToc">Farenheit to Celsius</label>
+        <br><br>
+        <button id="Convert" onclick="convert()" type="button" >Convert</button>
+        <br>
+        <p id="result">Result : </p>
+    </form>
 
 
 

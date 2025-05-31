@@ -1,19 +1,27 @@
-const num = document.getElementById("num")
+const temp = document.getElementById("temp")
+const cTof = document.getElementById("cTof")
+const fToc = document.getElementById("fToc")
+const Convert = document.getElementById("Convert")
+const result = document.getElementById("result")
 
-const para1 = document.getElementById("para1")
+function convert() {
 
-const submit = document.getElementById("submit")
 
-const min = 1
-const max =6
+    let tmp = temp.value
 
-submit.onclick =  function(){
-    n = Number(num.value)
-    let random = Math.round(Math.random() *(max-min+1)) + min
-    console.log(random)
-    if (n===random) {
-        para1.textContent = `You guessed it right`
-    } else {
-        para1.textContent = `Better luck next time`
+    if (cTof.checked) {
+        let cTemp = (tmp * (9 / 5)) + 32
+        cTemp = cTemp.toFixed(2)
+        result.textContent = `${cTemp} F`
+    } else if (fToc.checked) {
+        let cTemp = (tmp - 32) * (5 / 9)
+        cTemp = cTemp.toFixed(2)
+        result.textContent = `${cTemp} C`
     }
+    else {
+        result.textContent = `Select A Unit First`
+
+    }
+
 }
+
